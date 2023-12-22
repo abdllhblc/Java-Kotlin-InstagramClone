@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/feed_fragment">
+
+    <fragment
+        android:id="@+id/feed_fragment"
+        android:name="com.abdullah.kotlinjavainstagram.view.Feed_fragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feed_fragment_to_upload_fragment"
+            app:destination="@id/upload_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upload_fragment"
+        android:name="com.abdullah.kotlinjavainstagram.view.Upload_fragment"
+        android:label="fragment_upload"
+        tools:layout="@layout/fragment_upload" >
+        <action
+            android:id="@+id/action_upload_fragment_to_feed_fragment"
+            app:destination="@id/feed_fragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <TextView
+        android:id="@+id/recyclerViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="user email"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        />
+    <ImageView
+        android:id="@+id/recyclerImage"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:contentDescription="test"
+        ></ImageView>
+    <TextView
+        android:id="@+id/recyclerViewComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="comment"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+
+        android:textColor="@color/black"></TextView>
+    <TextView
+        android:id="@+id/recyclerViewTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"></TextView>
+</LinearLayout>
